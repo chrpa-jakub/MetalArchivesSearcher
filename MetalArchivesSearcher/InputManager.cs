@@ -8,7 +8,7 @@ namespace MetalArchivesSearcher
         {
             Console.Write("Input file name: ");
             var inputFileName = Console.ReadLine()??"";
-            return inputFileName.Contains(".txt") ? inputFileName : inputFileName+".txt";
+            return inputFileName;
         }
 
         public string GetOutputFileName()
