@@ -15,7 +15,7 @@ namespace MetalArchivesSearcher
         {
             Console.Write("Output file name: ");
             var outputFileNameRaw = Console.ReadLine()??"";
-            var outputFileName = outputFileNameRaw.Contains(".txt") ? outputFileNameRaw : outputFileNameRaw + ".txt";
+            var outputFileName = outputFileNameRaw;
             return outputFileName == string.Empty ? $"Output_{new Random().Next()}.txt" : outputFileName;
         }
     }
